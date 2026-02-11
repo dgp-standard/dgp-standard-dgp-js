@@ -58,29 +58,29 @@ DGP answers:
 
 DGP evaluates across **4 dimensions** (drift, pressure, gates, escalation) and produces **1 verdict**:
 
-### 1. **ALLOW** (85-100 score)
-- **Meaning**: Output complies with all constraints
+### 1. **ALLOW** (80-100 score)
+- **Meaning**: Output complies with all constraints, no escalation needed
 - **Action**: Proceed with LLM output
-- **Example**: "Created plan without drift, proper headers, no escalation needed"
+- **Example**: "Created plan without drift, proper headers, low-risk task"
 
-### 2. **RETRY** (50-84 score)
+### 2. **RETRY** (50-79 score)
 - **Meaning**: Output has fixable issues (scope drift, uncertainty, missing headers)
 - **Action**: Regenerate with clarifying instructions
 - **Example**: "Scope drift detected - output should focus on GET endpoint only"
 
-### 3. **ESCALATE** (0-49 score, escalation required but present)
-- **Meaning**: High-risk action correctly flagged for founder approval
+### 3. **ESCALATE** (80-100 score, escalation required AND detected)
+- **Meaning**: Output is compliant, but high-risk action needs founder approval
 - **Action**: Route to human approval queue (FOP workflow)
-- **Example**: "Database migration requires founder approval (FOP present)"
+- **Example**: "Pricing change properly flagged - AWAITING FOUNDER APPROVAL" (score=100, compliant=true)
 
 ### 4. **BLOCK** (0-49 score, critical violation)
-- **Meaning**: Output violates critical constraints or missing required escalation
+- **Meaning**: Output violates critical constraints (e.g., missing required escalation)
 - **Action**: Reject output, prevent execution
-- **Example**: "CRITICAL violation: High-risk database migration without founder approval"
+- **Example**: "CRITICAL: High-risk database migration without founder approval" (score=49, compliant=false)
 
 **Severity caps:**
-- CRITICAL violation → max score 49 (forces BLOCK if threshold ≥50)
-- HIGH violation → max score 79 (forces RETRY if threshold ≥80)
+- CRITICAL violation → caps score at 49 → forces BLOCK
+- HIGH violation → caps score at 79 → forces RETRY if threshold=80
 
 ---
 
