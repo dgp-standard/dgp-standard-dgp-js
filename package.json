@@ -1,0 +1,54 @@
+{
+  "name": "@dealgo/governance-sdk",
+  "version": "0.1.0-beta.1",
+  "description": "Vendor-agnostic AI governance through portable constraint capsules",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./validators": "./src/validators/index.js",
+    "./providers": "./src/providers/index.js",
+    "./core": "./src/core/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "test:watch": "node --test --watch test/**/*.test.js",
+    "example:basic": "node examples/basic-usage.js",
+    "example:custom": "node examples/custom-capsule.js",
+    "example:multi": "node examples/multi-provider.js"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "governance",
+    "compliance",
+    "portability",
+    "openai",
+    "gemini",
+    "anthropic",
+    "claude",
+    "alignment",
+    "safety"
+  ],
+  "author": "DeAlgo Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dealgo/governance-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/dealgo/governance-sdk/issues"
+  },
+  "homepage": "https://github.com/dealgo/governance-sdk#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "src/",
+    "schemas/",
+    "README.md",
+    "LICENSE"
+  ]
+}
