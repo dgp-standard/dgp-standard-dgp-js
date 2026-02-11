@@ -4,9 +4,11 @@
 
 [![npm version](https://img.shields.io/npm/v/@dealgo/governance-sdk.svg)](https://www.npmjs.com/package/@dealgo/governance-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DGP v1.0](https://img.shields.io/badge/DGP-v1.0%20Conformant-brightgreen.svg)](./CONFORMANCE.md)
+[![DGP v1.0](https://img.shields.io/badge/DGP-v1.0%20Conformant-brightgreen.svg)](https://github.com/dgp-standard/dgp-standard-dgp-spec)
 
 ✅ **DGP v1.0 Conformant** — Passes all 8 canonical protocol vectors with bit-for-bit accuracy.
+
+**Protocol Spec:** [DeAlgo Governance Protocol (DGP) v1.0](https://github.com/dgp-standard/dgp-standard-dgp-spec)
 
 ## Overview
 
