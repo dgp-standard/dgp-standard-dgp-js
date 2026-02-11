@@ -1,7 +1,7 @@
 {
-  "name": "@dealgo/governance-sdk",
-  "version": "0.1.0-beta.1",
-  "description": "Vendor-agnostic AI governance through portable constraint capsules",
+  "name": "@dgp-standard/dgp-js",
+  "version": "1.0.0",
+  "description": "Reference implementation of the DeAlgo Governance Protocol (DGP) v1.0 — vendor-agnostic AI governance",
   "type": "module",
   "main": "./src/index.js",
   "exports": {

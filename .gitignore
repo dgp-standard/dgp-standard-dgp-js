@@ -4,3 +4,7 @@ node_modules/
 .DS_Store
 coverage/
 dist/
+
+# Local test artifacts
+test-full.txt
+test-output.txt

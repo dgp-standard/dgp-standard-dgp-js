@@ -1,8 +1,8 @@
-# @dealgo/governance-sdk
+# @dgp-standard/dgp-js
 
-> Vendor-agnostic AI governance through portable constraint capsules
+> Reference implementation of the DeAlgo Governance Protocol (DGP) v1.0
 
-[![npm version](https://img.shields.io/npm/v/@dealgo/governance-sdk.svg)](https://www.npmjs.com/package/@dealgo/governance-sdk)
+[![npm version](https://img.shields.io/npm/v/@dgp-standard/dgp-js.svg)](https://www.npmjs.com/package/@dgp-standard/dgp-js)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DGP v1.0](https://img.shields.io/badge/DGP-v1.0%20Conformant-brightgreen.svg)](https://github.com/dgp-standard/dgp-standard-dgp-spec)
 
@@ -24,7 +24,7 @@ The Governance SDK enables **inference-time governance** across multiple LLM ven
 **Reference Implementation** (evaluates LLM output against governance policy):
 
 ```bash
-npm install @dealgo/governance-sdk
+npm install @dgp-standard/dgp-js
 ```
 
 ```javascript
