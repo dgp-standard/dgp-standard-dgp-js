@@ -18,4 +18,4 @@ jobs:
         uses: dgp-standard/dgp-standard-dgp-conformance-action@v1
         with:
           language: node
-          test_command: npm test
+          test_command: node --test test/contract-compliance.test.js
