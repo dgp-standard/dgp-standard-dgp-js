@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Verify DGP v1.0 Conformance
-        uses: dgp-standard/dgp-standard-dgp-conformance-action@v1
+        uses: dgp-standard/dgp-conformance-action@v1
         with:
           language: node
           test_command: node --test test/contract-compliance.test.js
