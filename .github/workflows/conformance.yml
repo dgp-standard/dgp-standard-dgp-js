@@ -1,0 +1,21 @@
+name: DGP v1.0 Conformance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Verify DGP v1.0 Conformance
+        uses: Jtjr86/dgp-standard-dgp-conformance-action@v1
+        with:
+          language: node
+          test_command: npm test
