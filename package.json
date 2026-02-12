@@ -34,12 +34,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dealgo/governance-sdk"
+    "url": "https://github.com/dgp-standard/dgp-standard-dgp-js"
   },
   "bugs": {
-    "url": "https://github.com/dealgo/governance-sdk/issues"
+    "url": "https://github.com/dgp-standard/dgp-standard-dgp-js/issues"
   },
-  "homepage": "https://github.com/dealgo/governance-sdk#readme",
+  "homepage": "https://github.com/dgp-standard/dgp-standard-dgp-js#readme",
   "engines": {
     "node": ">=18.0.0"
   },
